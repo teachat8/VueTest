@@ -15,7 +15,7 @@
     <div id="demo">
         <input type="text" placeholder="输入姓名查询" v-model="searchName">
         <ul>
-            <li v-for="(p,index) in filterPersons" :key="key">
+            <li v-for="(p,index) in filterPersons" :key="index">
                 {{index}}--{{p.name}}--{{p.age}}
             </li>
         </ul>
